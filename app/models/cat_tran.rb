@@ -1,0 +1,2 @@
+class CatTran < ApplicationRecord
+end

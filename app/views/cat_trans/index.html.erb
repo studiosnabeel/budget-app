@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Cat trans</h1>
+
+<div id="cat_trans">
+  <% @cat_trans.each do |cat_tran| %>
+    <%= render cat_tran %>
+    <p>
+      <%= link_to "Show this cat tran", cat_tran %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New cat tran", new_cat_tran_path %>
