@@ -1,5 +1,5 @@
 class CatTransController < ApplicationController
-  before_action :set_cat_tran, only: %i[ show edit update destroy ]
+  before_action :set_cat_tran, only: %i[show edit update destroy]
 
   # GET /cat_trans or /cat_trans.json
   def index
@@ -7,8 +7,7 @@ class CatTransController < ApplicationController
   end
 
   # GET /cat_trans/1 or /cat_trans/1.json
-  def show
-  end
+  def show; end
 
   # GET /cat_trans/new
   def new
@@ -16,8 +15,7 @@ class CatTransController < ApplicationController
   end
 
   # GET /cat_trans/1/edit
-  def edit
-  end
+  def edit; end
 
   # POST /cat_trans or /cat_trans.json
   def create
@@ -25,7 +23,7 @@ class CatTransController < ApplicationController
 
     respond_to do |format|
       if @cat_tran.save
-        format.html { redirect_to cat_tran_url(@cat_tran), notice: "Cat tran was successfully created." }
+        format.html { redirect_to cat_tran_url(@cat_tran), notice: 'Cat tran was successfully created.' }
         format.json { render :show, status: :created, location: @cat_tran }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +36,7 @@ class CatTransController < ApplicationController
   def update
     respond_to do |format|
       if @cat_tran.update(cat_tran_params)
-        format.html { redirect_to cat_tran_url(@cat_tran), notice: "Cat tran was successfully updated." }
+        format.html { redirect_to cat_tran_url(@cat_tran), notice: 'Cat tran was successfully updated.' }
         format.json { render :show, status: :ok, location: @cat_tran }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,19 +50,20 @@ class CatTransController < ApplicationController
     @cat_tran.destroy
 
     respond_to do |format|
-      format.html { redirect_to cat_trans_url, notice: "Cat tran was successfully destroyed." }
+      format.html { redirect_to cat_trans_url, notice: 'Cat tran was successfully destroyed.' }
       format.json { head :no_content }
     end
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_cat_tran
-      @cat_tran = CatTran.find(params[:id])
-    end
 
-    # Only allow a list of trusted parameters through.
-    def cat_tran_params
-      params.fetch(:cat_tran, {})
-    end
+  # Use callbacks to share common setup or constraints between actions.
+  def set_cat_tran
+    @cat_tran = CatTran.find(params[:id])
+  end
+
+  # Only allow a list of trusted parameters through.
+  def cat_tran_params
+    params.fetch(:cat_tran, {})
+  end
 end

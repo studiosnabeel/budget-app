@@ -1,6 +1,9 @@
 <p style="color: green"><%= notice %></p>
 
+<nav>
 <h1>Categories</h1>
+<%= button_to 'log out', destroy_user_session_path, class:'logout', method: :delete%>
+</nav>
 
 <div id="categories">
   <% @categories.each do |category| %>
