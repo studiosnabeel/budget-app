@@ -8,9 +8,10 @@
   <% @trans.each do |tran| %>
     <%= render tran %>
     <p>
-      <%= link_to "Show this tran", tran %>
+      <%= link_to "Show this tran", [@category, @tran] %>
     </p>
   <% end %>
 </div>
 
-<%= link_to "New tran", new_tran_path %>
+<%= link_to "New tran", new_category_tran_path %>
+<%= link_to "Back to Category", category_path(@category)%>

@@ -16,11 +16,14 @@
 @font-face {
   font-family: 'proxima_nova_rgregular';
   src: url('https://litmus.com/fonts/Emails/proximanova-regular-webfont.eot');
-  src:
-    url('https://litmus.com/fonts/Emails/proximanova-regular-webfont.eot?#iefix') format('embedded-opentype'),
-    url('https://litmus.com/fonts/Emails/proximanova-regular-webfont.woff') format('woff'),
-    url('https://litmus.com/fonts/Emails/proximanova-regular-webfont.ttf') format('truetype'),
-    url('https://litmus.com/fonts/Emails/proximanova-regular-webfont.svg#proxima_nova_rgregular') format('svg');
+  src: url('https://litmus.com/fonts/Emails/proximanova-regular-webfont.eot?#iefix')
+      format('embedded-opentype'),
+    url('https://litmus.com/fonts/Emails/proximanova-regular-webfont.woff')
+      format('woff'),
+    url('https://litmus.com/fonts/Emails/proximanova-regular-webfont.ttf')
+      format('truetype'),
+    url('https://litmus.com/fonts/Emails/proximanova-regular-webfont.svg#proxima_nova_rgregular')
+      format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -28,11 +31,14 @@
 @font-face {
   font-family: 'proxima_nova_rgbold';
   src: url('https://litmus.com/fonts/Emails/proximanova-bold-webfont.eot');
-  src:
-    url('https://litmus.com/fonts/Emails/proximanova-bold-webfont.eot?#iefix') format('embedded-opentype'),
-    url('https://litmus.com/fonts/Emails/proximanova-bold-webfont.woff') format('woff'),
-    url('https://litmus.com/fonts/Emails/proximanova-bold-webfont.ttf') format('truetype'),
-    url('https://litmus.com/fonts/Emails/proximanova-bold-webfont.svg#proxima_nova_rgbold') format('svg');
+  src: url('https://litmus.com/fonts/Emails/proximanova-bold-webfont.eot?#iefix')
+      format('embedded-opentype'),
+    url('https://litmus.com/fonts/Emails/proximanova-bold-webfont.woff')
+      format('woff'),
+    url('https://litmus.com/fonts/Emails/proximanova-bold-webfont.ttf')
+      format('truetype'),
+    url('https://litmus.com/fonts/Emails/proximanova-bold-webfont.svg#proxima_nova_rgbold')
+      format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -42,6 +48,25 @@
   margin: 0;
   padding: 0;
   font-family: proxima-nova, sans-serif;
+}
+
+.navbar {
+  background-color: #3778c2;
+  height: 74.5px;
+  padding: 0 10px;
+}
+
+.nav-title {
+  text-decoration: none;
+  color: white;
+}
+
+.search_icon {
+  color: white;
+}
+
+.fa-bars {
+  color: white;
 }
 
 .homePage {
@@ -89,6 +114,54 @@
 }
 
 .category-img {
-  width: 200px;
-  height: 200px;
+  width: 50px;
+  height: 50px;
+}
+
+.tran-box {
+  border: 2px solid white;
+}
+
+.show-btn {
+  background-color: #5fb523;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+}
+
+.tran-name {
+  color: #434b54;
+  font-size: 12px;
+}
+
+.log-out {
+  text-decoration: none;
+  text-align: center;
+  width: 100%;
+  border: none;
+  background-color: #5fb523;
+  color: white;
+  height: 6vh;
+}
+
+.logout-sub-box {
+  text-align: center;
+  width: 100%;
+  border: 2px solid white;
+}
+
+.logout-box {
+  padding: 0 10px;
+  height: 16vh;
+  background-color: #5fb523;
+}
+
+#categories {
+  height: 67vh;
+}
+
+.name {
+  color: #434b54;
+  font-size: 20px;
 }

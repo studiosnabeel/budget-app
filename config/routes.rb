@@ -3,12 +3,12 @@ Rails.application.routes.draw do
   
   resources :categories do
     resources :trans
-    resources :cat_trans
+    # resources :category_trans
   end
   resources :users
   resources :home_page
-  resources :cat_trans
-  resources :trans
+  # resources :cat_trans
+  # resources :trans
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Defines the root path route ("/")

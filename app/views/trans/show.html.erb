@@ -3,8 +3,8 @@
 <%= render @tran %>
 
 <div>
-  <%= link_to "Edit this tran", edit_tran_path(@tran) %> |
-  <%= link_to "Back to trans", trans_path %>
+  <%= link_to "Edit this tran", edit_category_tran_path([@category, @tran]) %> |
+  <%= link_to "Back to trans", [@category,:trans] %>
 
-  <%= button_to "Destroy this tran", @tran, method: :delete %>
+  <%= button_to "Destroy this tran", [@category, @tran], method: :delete %>
 </div>

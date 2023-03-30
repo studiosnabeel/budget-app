@@ -3,13 +3,9 @@ class Category < ApplicationRecord
   validates :icon, presence: true
 
   belongs_to :author, class_name: 'User', foreign_key: 'author_id'
-  has_many :cattrans, class_name: 'CatTran'
-  has_many :trans, through: :cattrans
+  has_many :category_trans
+  has_many :trans, through: :category_trans
   def total_amount
-    total = 0
-    cattrans.each do |item|
-      total += item.trans.amount
-    end
-    total
+    self.trans.sum(:amount).round(2)
   end
 end
