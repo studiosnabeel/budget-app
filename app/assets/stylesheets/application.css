@@ -69,6 +69,10 @@
   color: white;
 }
 
+.fa-arrow-left {
+  color: white;
+}
+
 .homePage {
   display: flex;
   flex-direction: column;
@@ -111,6 +115,33 @@
 
 .homePageButtonWhite {
   color: #434b54;
+}
+
+.field input {
+  width: 100%;
+  margin: 2px 0 0 0;
+  border: none;
+  text-decoration: none;
+}
+
+.field ::placeholder {
+  color: #434b54;
+  font-size: 20px;
+}
+
+.forgot-pass {
+  font-weight: 100;
+  color: #434b54;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.field input {
+  margin: 10px;
+}
+
+.field input:focus {
+  outline: none;
 }
 
 .category-img {
