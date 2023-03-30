@@ -8,10 +8,13 @@
 
 <div id="categories">
   <% @categories.each do |category| %>
+    <%= link_to category_path(category.id), class:'text-decoration-none' do %>
+    <div>
     <%= render category %>
-    <p class="d-flex justify-content-center">
-      <%= link_to "Details", category, class: 'show-btn btn' %>
-    </p>
+    </div>
+    <%# <p class="d-flex justify-content-center">
+    </p> %>
+  <% end %>
   <% end %>
 </div>
 </div>
