@@ -1,11 +1,12 @@
 class TransController < ApplicationController
+  before_action :set_category
   before_action :set_tran, only: %i[show edit update destroy]
 
   # GET /trans or /trans.json
   def index
     # @category = Category.find(params[:category_id])
-    @trans = Tran.all
-    # @trans = @category.trans
+    # @trans = Tran.all
+    @trans = @category.trans
   end
 
   # GET /trans/1 or /trans/1.json
@@ -21,11 +22,13 @@ class TransController < ApplicationController
 
   # POST /trans or /trans.json
   def create
+    @category = Category.find(params[:category_id])
     @tran = Tran.new(tran_params.merge(author: current_user))
 
     respond_to do |format|
       if @tran.save
-        format.html { redirect_to tran_url(@tran), notice: 'Tran was successfully created.' }
+        @category.trans << @tran
+        format.html { redirect_to category_path(@category), notice: 'Tran was successfully created.' }
         format.json { render :show, status: :created, location: @tran }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -58,6 +61,10 @@ class TransController < ApplicationController
   end
 
   private
+
+  def set_category
+    @category = Category.find(params[:category_id])
+  end
 
   # Use callbacks to share common setup or constraints between actions.
   def set_tran
