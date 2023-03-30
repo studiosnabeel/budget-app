@@ -5,7 +5,7 @@ class TransController < ApplicationController
   # GET /trans or /trans.json
   def index
     # @category = Category.find(params[:category_id])
-    #@trans = Tran.all
+    # @trans = Tran.all
     @trans = @category.trans
   end
 
@@ -65,6 +65,7 @@ class TransController < ApplicationController
   def set_category
     @category = Category.find(params[:category_id])
   end
+
   # Use callbacks to share common setup or constraints between actions.
   def set_tran
     @tran = Tran.find(params[:id])

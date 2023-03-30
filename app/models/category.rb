@@ -6,6 +6,6 @@ class Category < ApplicationRecord
   has_many :category_trans
   has_many :trans, through: :category_trans
   def total_amount
-    self.trans.sum(:amount).round(2)
+    trans.sum(:amount).round(2)
   end
 end
