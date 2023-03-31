@@ -10,5 +10,4 @@ class User < ApplicationRecord
   # validates :photo, presence: true
   has_many :categories
   has_many :trans
-
 end
