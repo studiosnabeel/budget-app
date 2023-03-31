@@ -18,10 +18,10 @@
   - [License](#license)
 
 
-# Budget App
+# PocketPal
 
 
-**Budget App** is a web mobile friendly app that supports user registration and authentication using the Devise gem, a user can create his own account on the app and after logging in she/he will be able to add categories and then add transactions under those categories, the app provide some metrics like the total value of transactions under each category, the app was build using Ruby on Rails framework.
+**PocketPal App** is a web mobile friendly app that supports user registration and authentication using the Devise gem, a user can create his own account on the app and after logging in she/he will be able to add categories and then add transactions under those categories, the app provide some metrics like the total value of transactions under each category, the app was build using Ruby on Rails framework.
 
 ## Built With
 
