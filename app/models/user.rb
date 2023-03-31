@@ -11,9 +11,4 @@ class User < ApplicationRecord
   has_many :categories
   has_many :trans
 
-  # def auto_confirm
-  #   confirm
-  #   self.confirmed_at = Time.now
-  #   save
-  # end
 end

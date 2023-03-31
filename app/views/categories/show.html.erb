@@ -1,5 +1,5 @@
 <nav class='navbar'>
-  <a href="#"><i class="fa-solid fa-bars"></i></a>
+  <a href="/"><i class="fa-solid fa-arrow-left"></i></a>
   <a class='nav-title' href="#">DETAILS</a>
   <a href="#"><i class="fa fa-search search_icon" aria-hidden="true"></i></a>
 </nav>
@@ -25,9 +25,9 @@
  <h6 class='fw-bold'><%= @category.total_amount%></h6>
  </div>
  <br>
- <div class='d-flex'>
-   <button class='details-btn btn'><%= link_to 'New Transaction', new_category_tran_path(@category), class:'btn btn-tertiary' %></button>
-   <button class='details-btn btn'><%= button_to "Delete Category", @category, method: :delete, class:'btn btn-tertiary' %></button>
+ <div class='d-flex justify-content-center'>
+   <%= link_to 'New Transaction', new_category_tran_path(@category), class:'details-btn btn btn-tertiary' %>
+   <%= button_to "Delete Category", category_path(@category), method: :delete, class:'details-btn btn btn-tertiary' %>
    </div>
 </div>
  
