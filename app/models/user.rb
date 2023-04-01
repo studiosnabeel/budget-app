@@ -6,7 +6,7 @@ class User < ApplicationRecord
 
   # after_create :auto_confirm
 
-  #validates :name, presence: true
+  # validates :name, presence: true
   # validates :photo, presence: true
   has_many :categories
   has_many :trans
