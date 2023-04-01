@@ -41,7 +41,7 @@
 
 ## Live Demo 
 
-- [Live Demo](https://mysite-njjr.onrender.com/)
+- [Live Demo Coming Soon.....]()
 - [Video Presentation of PocketPal App](https://www.youtube.com/watch?v=2Q8kTbXRZIc)
 
 ## Getting Started 
