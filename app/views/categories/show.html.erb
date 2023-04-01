@@ -1,0 +1,33 @@
+<nav class='navbar'>
+  <a href="/"><i class="fa-solid fa-arrow-left"></i></a>
+  <a class='nav-title' href="#">DETAILS</a>
+  <a href="#"><i class="fa fa-search search_icon" aria-hidden="true"></i></a>
+</nav>
+
+<p style="color: green"><%= notice %></p>
+
+<%= render @category %>
+
+<% @category.trans.each do |tran| %>
+<div class='border d-flex flex-column m-2'>
+  <div class='d-flex justify-content-start mx-2'>
+  <p class='me-2'><%= tran.name %></p>
+  <p>$<%= tran.amount %></p>
+  </div>
+  <p class='strf mx-2 fw-lighter'><%= tran.created_at.strftime('%d %b %Y %X') %></p>
+  <br>
+  </div>
+<% end %>
+
+<div>
+<div class='d-flex justify-content-between align-items-center mx-2'>
+ <h6 class='fw-bold'>Total Amount</h6>
+ <h6 class='fw-bold'><%= @category.total_amount%></h6>
+ </div>
+ <br>
+ <div class='d-flex justify-content-center'>
+   <%= link_to 'New Transaction', new_category_tran_path(@category), class:'details-btn btn btn-tertiary' %>
+   <%= button_to "Delete Category", category_path(@category), method: :delete, class:'details-btn btn btn-tertiary' %>
+   </div>
+</div>
+ 

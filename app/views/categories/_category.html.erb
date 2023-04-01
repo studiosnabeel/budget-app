@@ -1,0 +1,18 @@
+<div id="<%= dom_id category %>">
+  <div class=' tran-box d-flex justify-content-between m-4'>
+    <div>
+      <img class='category-img' src="<%= category.icon %>" alt="Classification image" />
+    </div>
+
+    <div>
+      <h6 class='name fw-lighter' >
+        <%= category.name %>
+      </h6>
+      <p class='tran-name fw-lighter'><%= category.created_at.strftime('%d %b %Y') %></p>
+    </div>
+
+    <div class=' dollar fw-bold'>
+      $ <%= category.total_amount%>
+    </div>
+  </div>
+</div>

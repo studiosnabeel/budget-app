@@ -1,0 +1,17 @@
+<p style="color: green"><%= notice %></p>
+<nav>
+<h1>Trans</h1>
+<%= button_to 'log out', destroy_user_session_path, class:'logout', method: :delete%>
+</nav>
+
+<div id="trans">
+  <% @trans.each do |tran| %>
+    <%= render tran %>
+    <p>
+      <%= link_to "Show this tran", [@category, @tran] %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New tran", new_category_tran_path %>
+<%= link_to "Back to Category", category_path(@category)%>
