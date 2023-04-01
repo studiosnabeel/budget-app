@@ -1,5 +1,5 @@
 databases:
-  - name: PocketPal
+  - name: postgres
     databaseName: budget_app_development
     user: postgres
 
