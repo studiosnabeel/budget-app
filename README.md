@@ -21,7 +21,7 @@
 # PocketPal
 
 
-**PocketPal App** is a web mobile friendly app that supports user registration and authentication using the Devise gem, a user can create his own account on the app and after logging in she/he will be able to add categories and then add transactions under those categories, the app provide some metrics like the total value of transactions under each category, the app was build using Ruby on Rails framework.
+**PocketPal App** is a web-based budgeting application built using Ruby on Rails and PostgreSQL. This application allows users to track their income and expenses and provides a visual representation of their budget. Users can add or remove income and expenses, and the application automatically calculates the remaining budget. The website is responsive and optimized for use on desktop and mobile devices. If you have any feedback or suggestions, please feel free to create an issue or submit a pull request.
 
 ## Built With
 
