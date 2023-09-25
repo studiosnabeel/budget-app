@@ -41,7 +41,7 @@
 
 ## Live Demo 
 
-- [Live Demo](https://mysite-g8gc.onrender.com)
+- not available
 - [Video Presentation of PocketPal App](https://www.youtube.com/watch?v=2Q8kTbXRZIc)
 
 ## Getting Started 
